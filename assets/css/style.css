@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #ffffff;
-    width: 960px; /* 920px + 20px padding */
+    width: 960px;
     margin: auto;
 }
 
@@ -33,11 +33,15 @@ a {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #666666;
 }
 
 hr {
-    clear: left;
+    clear: both;
 }
 
 #name-heading {
@@ -54,14 +58,14 @@ hr {
 
 #main-bio {
     background-color: #ffffff;
-    margin: 5% auto;
+    margin: 100px auto;
     padding: 30px 19px;
     overflow: auto;
     border: 1px solid #dddddd;
-    width: 920px;
+    width: 920px; /* width + padding + border = 960px */
 }
 
-#about-me {
+#about-me-heading {
     color: #4aaaa5;
 }
 
@@ -74,13 +78,21 @@ hr {
 
 #copyright-paragraph {
     margin: 0;
-    padding: 1.5% 0 0.25% 0;
+    padding: 25px 0 5px 0;
     text-align: center;
+    border-top: 6px solid #4aaaa5;
 }
 
 .container {
-    clear: left;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    right: 0;
+    bottom: 54px; /* footer height including top border */
+    clear: both;
     background-image: url(../images/funky-lines.png);
     border-top: 2px solid #cccccc;
-    border-bottom: 6px solid #4aaaa5;
+    margin: 0;
+    min-width: 960px; /* at least match width of the main-bio section */
+    min-height: 664px; /* height of main-bio section + its margins */
 }
