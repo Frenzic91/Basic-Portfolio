@@ -5,26 +5,26 @@ body {
 }
 
 header {
-    margin: 0 0 0 20%;
     background-color: #ffffff;
-    width: 100%;
+    width: 960px; /* 920px + 20px padding */
+    margin: auto;
 }
 
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
     margin: 0;
 }
 
 ul {
-    margin: 0 40% 0 0;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 20px 0 10px 0;
     float: right;
 }
 
 li {
     float: left;
-    margin: 0 15px;
+    margin: 0;
 }
 
 a {
@@ -41,19 +41,24 @@ hr {
 }
 
 #name-heading {
+    margin: 0;
     color: #ffffff;
     background-color: #4aaaa5;
     float: left;
-    padding: 10px 2%;
+    padding: 15px 60px;
+}
+
+#contact-link, #portfolio-link {
+    margin-left: 27px;
 }
 
 #main-bio {
     background-color: #ffffff;
     margin: 5% auto;
-    padding: 2%;
+    padding: 30px 19px;
     overflow: auto;
     border: 1px solid #dddddd;
-    width: 960px;
+    width: 920px;
 }
 
 #about-me {
