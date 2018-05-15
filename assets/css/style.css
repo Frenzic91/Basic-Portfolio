@@ -13,8 +13,8 @@ header {
 }
 
 img {
-    width: 215px;
-    height: 160px;
+    width: 300px;
+    height: 170px;
 }
 
 h1 {
@@ -128,6 +128,8 @@ hr {
 }
 
 #copyright-paragraph {
+    color: #cccccc;
+    font-size: 12px;
     margin: 0;
     padding: 25px 0 5px 0;
     text-align: center;
@@ -135,7 +137,7 @@ hr {
 }
 
 #submit-button {
-    color: #fff;
+    color: #ffffff;
     background-color: #4aaaa5;
     border: 0px;
     padding: 10px 25px;
@@ -174,12 +176,12 @@ hr {
 
 #project-1, #project-2, #project-3, #project-4, #project-5 {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
 }
 
 #project-1 {
-    top: 120px;
+    top: 110px;
     left: 19px; /* equal to the padding for main-portfolio */
 }
 
@@ -189,14 +191,51 @@ hr {
 }
 
 #project-3 {
-    top: 500px;
+    top: 510px;
     left: 19px;
 }
 
 #project-4 {
-    display: none;
+    top: 110px;
+    left: 349px;
 }
 
 #project-5 {
-    display: none;
+    top: 310px;
+    left: 349px;
+}
+
+#hangman-text, #trivia-game-text, #rps-text, #rpg-game-text, #widget-text {
+    position: absolute;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 300px;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 18px;
+}
+
+#hangman-text {
+    top: 90px;
+    left: 0px;
+}
+
+#trivia-game-text {
+    top: 90px;
+    left: 0px;
+}
+
+#rps-text {
+    top: 90px;
+    left: 0px;
+}
+
+#rpg-game-text {
+    top: 90px;
+    left: 0px;
+}
+
+#widget-text {
+    top: 90px;
+    left: 0px;
 }
