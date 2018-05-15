@@ -12,6 +12,11 @@ header {
     margin: auto;
 }
 
+img {
+    width: 215px;
+    height: 160px;
+}
+
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
@@ -20,7 +25,7 @@ h1 {
 
 ul {
     margin: 0;
-    padding: 20px 0 10px 0;
+    padding: 20px 0px 10px 0px;
     float: right;
 }
 
@@ -52,10 +57,18 @@ hr {
 }
 
 .form-inputs {
+    color: #777777;
     margin-bottom: 10px;
-    width: 100%;
+    padding-left: 7px;
+    width: 901px;
     border: 1px solid #dddddd;
 }
+/* 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
 
 .container {
     position: absolute;
@@ -81,23 +94,29 @@ hr {
     margin-left: 27px;
 }
 
-#main-bio, #main-content-contact-form { /* removed contact-form id */
+#main-bio, #main-content-contact-form, #main-portfolio { /* removed contact-form id */
+    position: relative;
     background-color: #ffffff;
     margin: 100px auto;
-    overflow: auto;
+    /* overflow: auto; */
     border: 1px solid #dddddd;
-    width: 920px; /* width + padding + border = 960px */
 }
 
-#main-bio {
+#main-bio, #main-portfolio {
+    width: 920px; /* width + padding + border = 960px */
     padding: 30px 19px;
 }
 
 #main-content-contact-form {
+    width: 908px;
     padding: 30px 25px;
 }
 
-#about-me-heading {
+#main-portfolio {
+    height: 650px;
+}
+
+#about-me-heading, #form-heading, #portfolio-heading {
     color: #4aaaa5;
 }
 
@@ -119,7 +138,8 @@ hr {
     color: #fff;
     background-color: #4aaaa5;
     border: 0px;
-    padding: 10px 20px;
+    padding: 10px 25px;
+    font-size: 18px;
 }
 
 #name-input {
@@ -131,7 +151,10 @@ hr {
 }
 
 #text-input {
+    padding: 10px;
+    width: 888px;
     height: 250px;
+    font-size: 18px;
 }
 
 #about-me-container {
@@ -144,6 +167,36 @@ hr {
     min-width: 978px;
 }
 
-#form-heading {
-    color: #4aaaa5;
+#portfolio-container {
+    min-height: 912px;
+    min-width: 960px;
+}
+
+#project-1, #project-2, #project-3, #project-4, #project-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#project-1 {
+    top: 120px;
+    left: 19px; /* equal to the padding for main-portfolio */
+}
+
+#project-2 {
+    top: 310px;
+    left: 19px;
+}
+
+#project-3 {
+    top: 500px;
+    left: 19px;
+}
+
+#project-4 {
+    display: none;
+}
+
+#project-5 {
+    display: none;
 }
