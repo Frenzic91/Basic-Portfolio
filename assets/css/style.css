@@ -1,3 +1,5 @@
+/* come up with a better naming scheme that works well with all 3 html files */
+
 body {
     margin: 0;
     color: #777777;
@@ -44,6 +46,29 @@ hr {
     clear: both;
 }
 
+.input-headings {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.form-inputs {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.container {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    right: 0;
+    bottom: 54px; /* footer height including top border */
+    clear: both;
+    background-image: url(../images/funky-lines.png);
+    border-top: 2px solid #cccccc;
+    margin: 0;
+}
+
 #name-heading {
     margin: 0;
     color: #ffffff;
@@ -56,13 +81,20 @@ hr {
     margin-left: 27px;
 }
 
-#main-bio {
+#main-bio, #main-content-contact-form { /* removed contact-form id */
     background-color: #ffffff;
     margin: 100px auto;
-    padding: 30px 19px;
     overflow: auto;
     border: 1px solid #dddddd;
     width: 920px; /* width + padding + border = 960px */
+}
+
+#main-bio {
+    padding: 30px 19px;
+}
+
+#main-content-contact-form {
+    padding: 30px 25px;
 }
 
 #about-me-heading {
@@ -83,16 +115,35 @@ hr {
     border-top: 6px solid #4aaaa5;
 }
 
-.container {
-    position: absolute;
-    top: 57px;
-    left: 0;
-    right: 0;
-    bottom: 54px; /* footer height including top border */
-    clear: both;
-    background-image: url(../images/funky-lines.png);
-    border-top: 2px solid #cccccc;
-    margin: 0;
-    min-width: 960px; /* at least match width of the main-bio section */
+#submit-button {
+    color: #fff;
+    background-color: #4aaaa5;
+    border: 0px;
+    padding: 10px 20px;
+}
+
+#name-input {
+    height: 25px;
+}
+
+#email-input {
+    height: 25px;
+}
+
+#text-input {
+    height: 250px;
+}
+
+#about-me-container {
     min-height: 664px; /* height of main-bio section + its margins */
+    min-width: 960px; /* at least match width of the main-bio section */
+}
+
+#contact-form-container {
+    min-height: 843px;
+    min-width: 978px;
+}
+
+#form-heading {
+    color: #4aaaa5;
 }
