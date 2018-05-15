@@ -213,29 +213,6 @@ hr {
     text-align: center;
     padding: 15px 0px;
     font-size: 18px;
-}
-
-#hangman-text {
-    top: 90px;
-    left: 0px;
-}
-
-#trivia-game-text {
-    top: 90px;
-    left: 0px;
-}
-
-#rps-text {
-    top: 90px;
-    left: 0px;
-}
-
-#rpg-game-text {
-    top: 90px;
-    left: 0px;
-}
-
-#widget-text {
     top: 90px;
     left: 0px;
 }
